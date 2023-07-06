@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --cor0: #011F26;
+    --cor1: #173C40;
+    --cor2: #406E73;
+    --cor3: #7BA1A6;
+    --cor4: #C9F2F2;
+
+
+    --fonte-padrão: times new roman, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'pacifico', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-family: var(--fonte-padrão);
+    line-height: 30px;
+}
+
+body {
+    background-color:var(--cor3);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+    min-width: 250px;
+    padding-top: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.555);
+
+}
+
+header>h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 10px;
+
+}
+
+
+header>p {
+    margin: auto;
+    max-width: 500px;
+}
+
+main {
+    background-color:var(--cor2) ;
+    max-width: 1200px;
+    min-width: 300px;
+    text-align: justify;
+    margin:auto;
+    margin-bottom: 30px;
+    text-indent: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+
+}
+
+article {
+    background-color: var(--cor2);
+}
+
+article > h1 {
+     text-align: center;
+     font-family: var(--fonte-destaque);
+     font-weight: lighter;
+     font-size:30px;
+     padding: 20px;
+}
+
+article > h2 {
+    background-image:linear-gradient(to right, var(--cor0), transparent);
+    font-size: 20px;
+    padding: 1px;
+    color: white;
+}
+
+article>p {
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+img {
+    width: 100%;
+}
+
+nav>a {
+padding: 1px;
+font-size: 18px;
+color:var(--cor0);
+text-decoration: none;
+transition-duration:1s;
+}
+
+nav>a:hover {
+    background-color: var(--cor4);
+    transition-duration:0,5s;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 5px 5px 0px 0px;  
+color: white;
+list-style-position: inside;
+padding: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+
+aside>h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--cor0);
+    
+}
+
+footer>p {
+    font-size: 15px;
+}
+
+.ancora {
+    text-decoration:none;
+    color: black;
+    font-weight: bolder;
+    padding: 2px 6px;
+}
+
+.ancora:hover {
+    background-color:white;
+    transition-duration: 0,5s;
+}
+
+strong {
+    font-weight: bolder;
+}
