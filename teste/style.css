@@ -21,8 +21,11 @@ header {
 }
 
 section {
-    font-size: 1.5em;
-    
+    font-size: 3vw;
+    padding-top: 10vh;
+    padding-left: 20px;
+    padding-bottom: 10vh;
+    line-height: 2em;
 }
 
 section.normal {
@@ -30,7 +33,15 @@ padding: 20px;
 }
 
 section.img {
-    background: black url(..//imagens/edward.jpg) center right no-repeat fixed; 
+    background: rgba(0, 0, 0, 0.507) url(..//imagens/edward.jpg) center right no-repeat fixed; 
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
     
+}
+
+section.img > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.274);
+    box-shadow: 1px 1px 0px black;
+    padding: 5px;
 }
