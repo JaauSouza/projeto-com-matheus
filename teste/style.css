@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 body {
+    min-width: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,6 +13,7 @@ body {
 p {
     line-height: 1.5em;
     font-size: 2em;
+    padding-bottom: 2em;
 }
 
 header {
@@ -21,10 +23,11 @@ header {
 }
 
 section {
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding-top: 10vh;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-bottom: 10vh;
+    padding-right: 40px;
     line-height: 2em;
 }
 
@@ -32,16 +35,33 @@ section.normal {
 padding: 20px;
 }
 
-section.img {
+section#img01 {
     background: rgba(0, 0, 0, 0.507) url(..//imagens/edward.jpg) center right no-repeat fixed; 
     background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
-    
+    color: white;
+}
+
+section#img02 {
+    background: rgba(0, 0, 0, 0.425) url(../imagens/one-piece.jpg) center center no-repeat fixed;
+    background-size: cover;
+    color:white
+
+}
+
+section.img {
+    box-shadow: inset 6px 6px 6px 6px rgba(0, 0, 0, 0.596);
 }
 
 section.img > p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.274);
-    box-shadow: 1px 1px 0px black;
+    box-shadow: 0px 0px 0px black;
     padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
